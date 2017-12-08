@@ -1,0 +1,9 @@
+language : java
+addons:
+  sonarcloud:
+    organization: "myapp" # the key of the org you chose at step #3
+    token:
+      secure: 95a2e9547d6cbcfad385bcad9dd45cf12064d0d7 
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
